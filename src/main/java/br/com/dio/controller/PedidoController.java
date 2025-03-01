@@ -28,7 +28,7 @@ public class PedidoController {
 
 		return ResponseEntity.ok().body(produto);
 
-	} //gg teste 2
+	}
 
 	@GetMapping(value = "/{id}")
 	public ResponseEntity<Pedido> buscaProduto(@PathVariable Long id) {
