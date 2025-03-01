@@ -22,11 +22,11 @@ public class PedidoController {
 	private PedidoService service;
 
 	@PostMapping(value = "/save")
-	public ResponseEntity<Pedido> salvaProduto(@RequestBody Pedido produto) {
+	public ResponseEntity<Pedido> salvaProduto(@RequestBody Pedido A) {
 
-		produto = service.save(produto);
+		A = service.save(A);
 
-		return ResponseEntity.ok().body(produto);
+		return ResponseEntity.ok().body(A);
 
 	}
 
